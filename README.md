@@ -97,10 +97,11 @@ This flowchart outlines the application's logic, starting from user authenticati
 
 ---
 
-## 🔗 Source Diagram Files
+## 🔗 Diagram Source Files
 
-Edit or view the original editable diagrams here:
-- [UML Diagram (Draw.io Viewer)](https://app.diagrams.net/)
-- [Flow Chart (Draw.io Viewer)]([https://app.diagrams.net/](https://drive.google.com/file/d/1X4bE_1dL5R0s_NQ_ZhgBobBrUqR7hc9d/view?usp=sharing))
+Click to view or edit the diagrams in Draw.io:
+
+- [UML Diagram - View/Edit](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&nav=1&title=uml.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fyour-username%2Fyour-repo%2Fmain%2Fuml.drawio)
+- [Flow Chart - View/Edit](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&nav=1&title=flowchart.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fyour-username%2Fyour-repo%2Fmain%2Fflowchart.drawio)
 
 ---
