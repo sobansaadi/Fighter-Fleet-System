@@ -101,7 +101,7 @@ This flowchart outlines the application's logic, starting from user authenticati
 
 Click to view or edit the diagrams in Draw.io:
 
-- [UML Diagram - View/Edit](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&nav=1&title=uml.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fyour-username%2Fyour-repo%2Fmain%2Fuml.drawio)
-- [Flow Chart - View/Edit](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&nav=1&title=flowchart.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fyour-username%2Fyour-repo%2Fmain%2Fflowchart.drawio)
+- [UML Diagram – View/Edit](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&nav=1&title=uml.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fsobansaadi%2FSoban-oop-project%2Fmain%2Fuml.drawio)
+- [Flow Chart – View/Edit](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&nav=1&title=flowchart.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fsobansaadi%2FSoban-oop-project%2Fmain%2Fflowchart.drawio)
 
 ---
