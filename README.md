@@ -1,73 +1,106 @@
-# Soban-oop-project
-
 # 🛩️ Fighter Fleet Management System
 
-A C++ Object-Oriented Programming (OOP) project designed to manage a fleet of fighter jets, pilots, and missions. It features  movement simulation, user access control, and future compatibility with SFML for graphics.
+An Object-Oriented Programming (OOP) project in C++ to simulate the management of a military fighter fleet. The system handles jets, pilots, and mission logistics with support for 2D movement simulation and role-based access control. It is designed to be compatible with **SFML** for future graphical enhancements.
 
 ---
 
-## 📌 Features
+## 📦 Project Features
 
-### ✅ Object-Oriented Design
-- Abstraction via abstract classes
-- Inheritance: `FighterJet` → `StealthJet`, `BomberJet`
-- Polymorphism for launching jets
-- Encapsulation of pilot, mission, and user data
+### 🧠 Object-Oriented Principles
+- **Abstraction:** Via abstract classes for core jet behavior.
+- **Inheritance:** `FighterJet` as a base class, extended by `StealthJet` and `BomberJet`.
+- **Polymorphism:** Jet launching operations implemented polymorphically.
+- **Encapsulation:** Structured management of pilot, mission, and user data.
 
-### ✅ Core Functionalities
-- Manage jets (add, launch, assign)
-- Track pilot assignments and availability
-- Plan missions with multiple jets and pilots
-- Log and track maintenance for each jet
-- Move jets in 2D space (forward, backward, left, right)
-- User login system with access roles (Admin / Else)
+### ⚙️ Core Functionalities
+- Add, launch, and assign fighter jets.
+- Assign pilots and track their availability.
+- Plan and manage complex missions involving multiple assets.
+- Log and monitor jet maintenance status.
+- Simulate 2D jet movement (forward, backward, left, right).
+- Secure user login system with role-based access (Admin / Limited).
 
 ---
+
 ## 📊 UML Diagram
 
-The UML diagram below illustrates the relationship between key classes like `FighterJet`, `StealthJet`, `BomberJet`, `Mission`, `Pilot`, `User`, and `FleetManager`.
+The diagram below illustrates class relationships between key components such as `FighterJet`, `StealthJet`, `BomberJet`, `Mission`, `Pilot`, `User`, and `FleetManager`.
 
 ![UML Diagram](./uml.png)
 
-## 🔄 Activity Flow
+> **Source**: Designed using [draw.io](https://draw.io)
 
-1. **User Login** (with username, password, role)
-2. **Main Menu Based on Role**
-   - Add / view jets, pilots, missions
-   - Assign pilots and jets
-   - Launch and move jets
-   - Log maintenance
+---
+
+## 🔁 System Activity Flow
+
+1. **User Authentication**
+   - Login with username, password, and defined role.
+
+2. **Role-Based Dashboard**
+   - **Admin Access:**
+     - Add/view jets, pilots, and missions.
+     - Assign pilots and jets.
+     - Launch and control jet movement.
+     - Log maintenance activities.
+   - **Limited Access:**
+     - View jets and missions.
+     - Launch jets (if authorized).
+
 3. **Jet Movement Simulation**
-   - Move jets on 2D grid using methods:
+   - Jet moves on a virtual 2D grid using directional methods:
      - `moveForward()`
      - `moveBackward()`
      - `moveLeft()`
      - `moveRight()`
-4. **Mission Planning**
-   - Assign multiple jets and pilots to each mission
-   - Track mission targets and schedule
-5. ** SFML Graphics**
-   - Will use SFML to visually simulate aircraft movement
+
+4. **Mission Control**
+   - Plan operations by assigning jets and pilots.
+   - Define mission targets, schedule, and objectives.
+
+5. **Visual Simulation (Planned)**
+   - Future integration with SFML to render flight movements and UI.
 
 ---
 
-## 🔁 Flow Chart
+## 🔄 Flowchart Overview
 
-This flow chart shows how the program logic flows from user login to system functionalities like managing jets, pilots, and missions.
+This flowchart outlines the application's logic, starting from user authentication through system operations like jet control and mission handling.
 
 ![Flow Chart](./flowchart.png)
 
----
-## 🔐 User Roles
-
-| Role     | Permissions                      |
-|----------|----------------------------------|
-| Admin    | Full access to all features      |
-| Else     | Limited to viewing and launching |
+> **Source**: Designed using [draw.io](https://draw.io)
 
 ---
 
-## 🛠️ Future Enhancements
-- Will Add SFML-based visual simulation
-- Save/load data from files
-- Will Add GUI login interface
+## 🔐 User Roles & Permissions
+
+| Role   | Access Level                                      |
+|--------|---------------------------------------------------|
+| Admin  | Full access: add, assign, launch, log, plan       |
+| User   | Limited access: view and launch (restricted)      |
+
+---
+
+## 🚀 Planned Enhancements
+- 📊 **SFML-based graphical simulation**
+- 💾 **Persistent data storage** (load/save)
+- 🖥️ **Graphical User Interface (GUI)** for login and management
+
+---
+
+## 🧰 Tools Used
+
+- **Language:** C++
+- **Graphics:** SFML (future integration)
+- **Diagram Design:** [draw.io](https://draw.io)
+
+---
+
+## 🔗 Source Diagram Files
+
+Edit or view the original editable diagrams here:
+- [UML Diagram (Draw.io Viewer)](https://app.diagrams.net/)
+- [Flow Chart (Draw.io Viewer)](https://app.diagrams.net/)
+
+---
