@@ -27,7 +27,7 @@ A C++ Object-Oriented Programming (OOP) project designed to manage a fleet of fi
 
 The UML diagram below illustrates the relationship between key classes like `FighterJet`, `StealthJet`, `BomberJet`, `Mission`, `Pilot`, `User`, and `FleetManager`.
 
-![UML Diagram]("uml.png")
+![UML Diagram](./uml.png)
 
 ## 🔄 Activity Flow
 
@@ -55,7 +55,7 @@ The UML diagram below illustrates the relationship between key classes like `Fig
 
 This flow chart shows how the program logic flows from user login to system functionalities like managing jets, pilots, and missions.
 
-![Flow Chart]("flowchart.png")
+![Flow Chart](./flowchart.png)
 
 ---
 ## 🔐 User Roles
