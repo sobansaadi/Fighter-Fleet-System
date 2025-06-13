@@ -1,0 +1,5 @@
+Bombs 30 4500
+Missiles 6 3000
+Missiles 4 2800
+Bombs 24 4700
+MachineGuns 500 1000

@@ -1,0 +1,8 @@
+9 Soban Wing_Commander 10 1
+10 Sami Flight_Leader 11 1
+11 Zeeshan Strike_Commander 12 1
+12 Kamran Bomber_Commander 12 1
+13 Hamza Jet_Operator 13 1
+14 Junaid Strike_Pilot 14 1
+15 Amir Tactical_Commander 15 1
+16 Ahmad Captain -1 1

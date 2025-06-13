@@ -1,0 +1,7 @@
+BOMBER 10 Mirage_V 750 Bombs 10 3000 Ready
+STEALTH 11 JF-17_Block_III 900 Missiles 6 2500 Ready
+BOMBER 12 Mirage_V 750 Bombs 12 3200 Ready
+STEALTH 13 F-16_BML 950 Missiles 8 2700 Ready
+STEALTH 14 F-17_Thunder 930 Missiles 7 2600 Ready
+BOMBER 15 Mirage_V 740 Bombs 14 3100 Ready
+STEALTH 16 J10C 500 Missiles 30 300 Ready
