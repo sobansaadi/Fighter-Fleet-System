@@ -11,24 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: |
-        sudo apt update
-        sudo apt install -y build-essential cmake pkg-config libgl1-mesa-dev libx11-dev libxcursor-dev libxrandr-dev libxi-dev
+      - name: Install dependencies & raylib
+        run: |
+          sudo apt update
+          sudo apt install -y build-essential cmake pkg-config \
+            libgl1-mesa-dev libx11-dev libxcursor-dev libxrandr-dev libxi-dev \
+            libraylib-dev
 
-    - name: Clone and install raylib
-      run: |
-        git clone https://github.com/raysan5/raylib.git
-        cd raylib
-        mkdir build && cd build
-        cmake ..
-        make -j$(nproc)
-        sudo make install
-
-    - name: Compile project
-      working-directory: FighterJet-Fleet-System
-      run: |
-        g++ -std=c++17 *.cpp -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o fleet_sim
+      - name: Compile project
+        working-directory: FighterJet-Fleet-System
+        run: |
+          g++ -std=c++17 *.cpp -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o fleet_sim
