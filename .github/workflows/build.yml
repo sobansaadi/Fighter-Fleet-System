@@ -1,25 +1,34 @@
-name: Build FighterJet Console System with Raylib
+name: Build Fighter Fleet Project
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install Dependencies
+    - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install -y g++ libraylib-dev
+        sudo apt update
+        sudo apt install -y build-essential cmake pkg-config libgl1-mesa-dev libx11-dev libxcursor-dev libxrandr-dev libxi-dev
 
-    - name: Build Project
+    - name: Clone and install raylib
       run: |
-        mkdir build
-        g++ -std=c++17 -I./FighterJet-Fleet-System FighterJet-Fleet-System/*.cpp -o build/fighter_fleet -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+        git clone https://github.com/raysan5/raylib.git
+        cd raylib
+        mkdir build && cd build
+        cmake ..
+        make -j$(nproc)
+        sudo make install
+
+    - name: Compile project
+      working-directory: FighterJet-Fleet-System
+      run: |
+        g++ -std=c++17 *.cpp -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o fleet_sim
