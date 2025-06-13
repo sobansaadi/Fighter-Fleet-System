@@ -14,14 +14,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install dependencies & raylib
+      - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y build-essential cmake pkg-config \
-            libgl1-mesa-dev libx11-dev libxcursor-dev libxrandr-dev libxi-dev \
-            libraylib-dev
+          sudo apt install -y git build-essential cmake libgl1-mesa-dev \
+            libx11-dev libxcursor-dev libxrandr-dev libxi-dev
 
-      - name: Compile project
+      - name: Clone and build Raylib
+        run: |
+          git clone https://github.com/raysan5/raylib.git
+          mkdir raylib/build
+          cd raylib/build
+          cmake ..
+          make
+          sudo make install
+
+      - name: Build project
         working-directory: FighterJet-Fleet-System
         run: |
           g++ -std=c++17 *.cpp -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o fleet_sim
