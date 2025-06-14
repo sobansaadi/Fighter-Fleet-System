@@ -20,6 +20,11 @@ jobs:
           sudo apt install -y git build-essential cmake libgl1-mesa-dev \
             libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev
 
+      - name: Lint commits (Conventional Commits)
+        uses: wagoid/commitlint-github-action@v5
+        with:
+          configFile: commitlint.config.js
+    
       - name: Clone and build Raylib
         run: |
           git clone https://github.com/raysan5/raylib.git
